@@ -1,4 +1,5 @@
 # Talita
+
  web site de Talita da SIlva Merlim
 
  ## Tarefas 
@@ -7,12 +8,14 @@
 
  ## Icones
 
- :pakage: nova funcionalidade 
+- :pakage: nova funcionalidade 
 
- :up: atualização 
+- :up: atualização 
 
-:beatle: correção de bug 
+- :beatle: correção de bug 
 
- :chekered_flag: release 
+- :chekered_flag: release 
+
+
 
 
