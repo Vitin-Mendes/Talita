@@ -10,6 +10,14 @@
 
 }
 
+@media (max-width:999px){
+
+    *{
+        width: 100%;
+    }
+
+}
+
 :root{
 
     --font-primary:"Baloo Da 2", serif;
@@ -30,10 +38,23 @@
     justify-content: space-evenly;
 }
 
+@media(max-width:999px){
+
+   .hamburguer{
+
+       position: fixed;
+       height: 2rem;
+       width: 2rem;
+
+   }
+}
+
+
 .show-menu .hamburguer{
 
     right: 16rem;
 }
+
 
 .line{
     width: 100%;
@@ -88,6 +109,7 @@
     font-family: var(--font-action);
     opacity: 0;
 }
+
                                                 /* ESTILIZANDO CABEÇALHO */
 
 .hamburguer span::before{
@@ -98,7 +120,7 @@
     border-left: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
     border-top: .5rem solid transparent;
-    left: -1rem;
+    left: -1rem; 
 }
 
 .hamburguer span:hover{
@@ -124,12 +146,25 @@ header{
 
 
 }
+
+@media (max-width:999px){
+
+    header{
+        width: 100vw;
+    }
+
+    
+
+}
+
+
 .img-wrapper{
     width: 100%;
     height: 100%;
     overflow: hidden;
     background-color: rgba(0,0,0,0.8);
 }
+
 
 .img-wrapper img{
 
@@ -141,6 +176,14 @@ header{
 
 }
 
+@media (max-width:999px){
+
+    .img-wrapper img{
+        width: 100vw;
+        height: 100vh;
+    }   
+
+}
 @keyframes zoom {
 
     0%{
@@ -155,7 +198,6 @@ header{
 
     position: absolute;
     left: 15%;
-    
     top: 30%;
     
 
@@ -213,6 +255,30 @@ header{
 
 }
 
+@media (max-width:999px){
+
+    .banner{
+        position:absolute;
+        top: 15%;
+        left:10%;
+    }
+
+    .banner h1{
+
+        font-size: 2.5rem;
+    }
+
+    .banner p{
+        
+        font-size: 1rem;
+    }
+
+    .banner button{
+
+        width: 50%;
+    }
+
+}
 @keyframes movebanner{
 
     0%{
@@ -237,7 +303,6 @@ header{
     right: -20rem;
     transition: all 1s;
     
-
 }
 
 .show-menu .sidebar{
@@ -245,6 +310,14 @@ header{
     right: 0;
 }
 
+@media (max-width:999px){
+
+    .sidebar{
+        position: fixed;
+        height: 100vh;
+    }
+
+}
 .menu{
     position: absolute;
     top: 40%;
@@ -352,6 +425,64 @@ header{
 
 }
 
+@media (max-width:999px){
+
+    .conhecimentos{
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(29, 6rem);
+        row-gap: .5rem;
+        
+
+
+
+    }
+
+    .conhecimento:nth-child(1){
+    
+        grid-column: 2/6;
+        grid-row: 1/3;
+    
+    }
+    
+    .conhecimento:nth-child(2){
+        
+        grid-column: 2/6;
+        grid-row: 5/7;
+    
+    }
+    
+    .conhecimento:nth-child(3){
+        
+        grid-column: 2/6;
+        grid-row: 9/11;
+    
+    }
+    
+    .conhecimento:nth-child(4){
+        
+        grid-column: 2/6;
+        grid-row: 13/15;
+    
+    }
+    
+    .conhecimento:nth-child(5){
+        
+        grid-column: 2/6;
+        grid-row: 17/19;
+    
+    }
+    
+    .conhecimento:nth-child(6){
+        
+        grid-column: 2/6;
+        grid-row: 21/23;
+    
+    }
+    
+
+}
 .sessao-conhecimentos{
     background-color: black;
     color: #fff;
@@ -383,6 +514,16 @@ header{
 
 }
 
+@media(max-width:999px){
+
+    .sessao-header h1{
+        
+        font-size: 3rem;
+        padding-left: .6rem;
+
+    }
+
+}
 
 .conhecimento-header{
     display: flex;
@@ -418,6 +559,33 @@ header{
     transition: 1s;
 
 }
+
+@media(max-width:999px){
+
+    .conhecimento-header{
+
+        padding-top: 3rem;
+
+
+    }
+
+    .conhecimento-header i{
+
+        font-size: 2.5rem;
+
+    }
+
+    .conhecimento-header h3{
+
+        font-size: 2rem;
+        
+        padding-right:4rem ;
+        text-align: center;
+        align-items: center;
+    }
+
+
+}
                               /* CONHECIMENTO ESTÁ ESCRITO ERRADO!! PARA NÃO MUDAR TODAS AS TAGS DE PARÁGRAFO DO INDX, DECIDI CONTINUAR COM CONECIMENTO */
 
 
@@ -429,6 +597,15 @@ header{
     transition: color 1s;
 }
 
+@media (max-width:999px){
+
+    .conecimento-text{
+
+        margin-bottom: 0%;
+    }
+
+
+}
 .conecimento-text:hover{
 
     opacity: 0.8;
@@ -436,6 +613,7 @@ header{
     transition: 1s;
 
 }
+
 
 
 .conhecimento-img-wrapper{
@@ -449,5 +627,24 @@ header{
 .conhecimento-img-wrapper img{
     object-fit: cover;
     width: 100%;
-    background-color: rgb(160, 4, 139);
+    
+}
+
+@media(max-width:999px){
+
+    .conhecimento-img-wrapper{
+
+        grid-column: 1/6;
+        grid-row: 24/29;
+    }
+
+    .conhecimento-img-wrapper img{
+
+        object-fit:cover;
+        width: 110%;
+        height: 100%;
+        
+    }
+
+
 }
