@@ -602,6 +602,8 @@ header{
     .conecimento-text{
 
         margin-bottom: 0%;
+        margin-left: .5rem;
+        margin-right: .5rem;
     }
 
 
@@ -647,4 +649,37 @@ header{
     }
 
 
+}
+
+.sessao-projetos{
+    background-color: #000;
+}
+
+.sessao-header{
+    color: #fff;
+}
+
+.projetos{
+    display:flex;
+    
+    justify-content: space-evenly;
+}
+
+.card{
+    width:18rem;
+    height: 25rem;
+}
+
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
 }
