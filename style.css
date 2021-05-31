@@ -1013,6 +1013,8 @@ header{
 
 @media(max-width:999px){
 
+   
+
     
     .card2{
         
@@ -1092,11 +1094,118 @@ header{
 
 }
 
-.sessao-contato{
+/* .sessao-contato{
     width: 100%;
     height: 100vh;
-    background-color:aquamarine;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.contato-wrapper{
+    width:60%;
+    height: 30rem;
+    display:flex;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5)
+}
+
+.contato-left{
+    width: 35%;
+    background-image: linear-gradient(rgba(15,15,15,0.6), rgba(22,22,22,0.90)), 
+    url();
+    background-size: cover;
+}
+
+.contato-rigth{
+    width: 65%;
+    background: #fe8c00;  
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00); 
+    background: linear-gradient(to left, #f83600, #fe8c00);
+    padding: 1rem 3rem 3rem 3rem;
+    
+}
+
+.sessao-contato h2{
+    width: 100%;
+    text-align: center;
+    font-family:  var(--font-primary);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #000;
+    height: 3rem;
+    outline: none;
+    
+}  */
+
+.cu{
+
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.curriculo{
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.esquerda{
+
+    width: 50%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    
+}
+
+.amarelo{
+    background-color: rgb(243, 243, 39);
+    width: 50%;
+    
+}
+
+.img-cu{
+    width: 100%;
+    height: 50%;
+    
+}
+.img-cu img{
+    
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-size: cover;
+   
+    
+}
+.direita{
+    width: 50%;
+    
+} 
