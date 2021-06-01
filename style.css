@@ -1094,67 +1094,11 @@ header{
 
 }
 
-/* .sessao-contato{
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.sessao-header{
 
-.contato-wrapper{
-    width:60%;
-    height: 30rem;
-    display:flex;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5)
-}
-
-.contato-left{
-    width: 35%;
-    background-image: linear-gradient(rgba(15,15,15,0.6), rgba(22,22,22,0.90)), 
-    url();
-    background-size: cover;
-}
-
-.contato-rigth{
-    width: 65%;
-    background: #fe8c00;  
-    background: -webkit-linear-gradient(to right, #f83600, #fe8c00); 
-    background: linear-gradient(to left, #f83600, #fe8c00);
-    padding: 1rem 3rem 3rem 3rem;
-    
-}
-
-.sessao-contato h2{
-    width: 100%;
-    text-align: center;
-    font-family:  var(--font-primary);
-    color: #fff;
-    font-size: 3rem;
-    font-weight: lighter;
-}
-
-.sessao-contato form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
+    background-color: black;
 
 }
-
-.field{
-    background: transparent;
-    border: none;
-    width: 20rem;
-    font-size: 1.5rem;
-    font-family: var(--font-secundary);
-    border-bottom: 2px dashed #000;
-    height: 3rem;
-    outline: none;
-    
-}  */
 
 .cu{
 
@@ -1165,47 +1109,261 @@ header{
 
 }
 
-.curriculo{
 
-    margin-top: 2%;
+.curriculo{
     margin-bottom: 2%;
     margin-left: 10%;
     margin-right: 10%;
     background-color: #eee;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 9rem);
 }
 
 .esquerda{
 
-    width: 50%;
-    padding-top: 4rem;
+    width: 100%;
+    padding-top: 2rem;
     padding-bottom: 4rem;
     padding-left: 2rem;
-    
+    grid-column: 1;
+    grid-row: 1/5;
 }
 
-.amarelo{
-    background-color: rgb(243, 243, 39);
-    width: 50%;
-    
-}
 
-.img-cu{
-    width: 100%;
-    height: 50%;
-    
-}
+
 .img-cu img{
-    
-    
-    align-items: center;
-    justify-content: center;
     border-radius: 100%;
-    background-size: cover;
-   
+}
+
+.azul h1{
+    
+    
+    
+    padding-left: 4rem;
+    font-size: 2.5rem;
+    font-family: var(--font-primary);
+    transition: color 1s;
+    font-weight: 500;
+}
+
+.azul h1:hover{
+    opacity: 0.8;
+    color: #fe8c00;
+    transition: 1s;
     
 }
-.direita{
-    width: 50%;
+
+.azul p{
+    margin-bottom: .5rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    font-family: var(--font-secundary);
+    transition: color 1s;
+    
+}
+
+.azul p:hover{
+    opacity: 0.8;
+    color: #f83600;
+    transition: 1s;
+
+
+}
+.direita{    
+
+    
+    padding-bottom: 4rem;
+    padding-right: 5rem;
     
 } 
+
+
+.direita h1 {
+
+    width: 110%;
+    padding-right: 20rem;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
+    margin-bottom: 1rem;
+    grid-column: 2;
+    grid-row: 1/5;
+    
+}
+
+.direita h3{
+
+    font-family: var(--font-primary);
+    transition: color 1s;
+    font-weight: 500;
+    padding-left: 8rem;
+    font-size: 2rem;
+    grid-column: 2;
+    grid-row: 1/5;
+    align-items: center;
+    justify-content: center;
+    width: 110%; 
+    padding-right: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.direita h3:hover{
+    opacity: 0.8;
+    color: #fe8c00;
+    transition: 1s;
+    
+}
+.direita p{
+
+    font-size: 1rem;
+    font-family: var(--font-secundary);
+    transition: color 1s;
+    padding-left: 6rem;
+}
+
+.direita p:hover{
+    opacity: 0.8;
+    color: #f83600;
+    transition: 1s;
+
+
+}
+
+
+.cursos {
+
+     background-color: #eee;
+     border-radius: 10px;
+     margin-right: 4rem;
+     margin-bottom: 2%;
+
+}
+
+.cursos h1{
+    
+    padding-left: 20%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-family: var(--font-primary);
+    transition: color 1s;
+
+}
+
+.cursos h1:hover{
+    opacity: 0.8;
+    color: #fe8c00;
+    transition: 1s;
+}
+
+.cursos p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    margin-bottom: 1rem;
+}
+
+.cursos p:hover{
+    opacity: 0.8;
+    color: #f83600;
+    transition: 1s;
+
+} 
+
+@media(max-width:999px){
+
+    .cu{
+        background-color: black;
+        color: #fff;
+       
+        
+    }
+
+    .curriculo{
+        background-color: #eee;
+        color: black;
+        width: 60%;
+        margin-left: 5rem;
+        border-radius: 10px 10px 10px 10px;
+        display: grid;
+        grid-template-columns: repeat(1, .5fr);
+        grid-template-rows: repeat(14, 9rem);
+    }
+
+    .esquerda{
+
+        grid-column: 1;
+        grid-row: 1/5;
+
+    }
+
+    .direita{
+        margin-top: 5rem;
+        grid-column: 1;
+        grid-row: 7/11;
+    }
+
+    .amarelo{
+        width: 100%;
+    }
+
+    .img-cu {
+        width: 100%;
+        height: 100%;
+        padding-left: .5rem;
+        margin-top: 2rem;
+    }
+
+    .img-cu img{
+        border-radius: 50%;
+    }
+
+    .azul{
+        
+        padding-left: 1rem;
+        text-align: justify;
+    }
+
+    .azul h1{
+        font-family: var(--font-primary);
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .azul p{
+        font-family: var(--font-secundary);
+        font-size: 1rem;
+        
+    }
+
+    .direita{
+        padding-left: 1rem;
+    }
+
+    .direita h3{
+        
+        font-family: var(--font-primary);
+        font-size: 2rem;
+    }
+
+    .direita p {
+        font-family: var(--font-secundary);
+        font-size: 1rem;
+    }
+    
+
+    
+
+
+
+    
+}
