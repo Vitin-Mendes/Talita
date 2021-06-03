@@ -10,10 +10,12 @@
 
 }
 
+
 @media (max-width:999px){
 
     *{
         width: 100%;
+        
     }
 
 }
@@ -333,7 +335,7 @@ header{
 
 }
 
-.menu-link{
+.menu-link1{
 
     font-family: var(--font-action);
     font-size: 2rem;
@@ -341,7 +343,46 @@ header{
     transition: color 1s;
 }
 
-.menu-link:hover{
+.menu-link2{
+
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: rgb(129, 129, 129);
+    transition: color 1s;
+}
+
+.menu-link3{
+
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: rgb(129, 129, 129);
+    transition: color 1s;
+}
+
+.menu-link4{
+
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: rgb(129, 129, 129);
+    transition: color 1s;
+}
+
+.menu-link1:hover{
+    color: #fe8c00;  
+    
+}
+
+.menu-link2:hover{
+    color: #fe8c00;  
+    
+}
+
+.menu-link3:hover{
+    color: #fe8c00;  
+    
+}
+
+.menu-link4:hover{
     color: #fe8c00;  
     
 }
@@ -1101,162 +1142,155 @@ header{
 }
 
 .cu{
-
-    background-color: #000;
+    background-color: black;
+    color: #fff;
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(14, 6rem);
+    row-gap: .5rem;
     width: 100%;
     height: 100vh;
-    display: flex;
-
 }
 
 
 .curriculo{
-    margin-bottom: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
+
     background-color: #eee;
+    color: black;
+    width: 110%;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 9rem);
-}
+    grid-column: 2/8;
+    grid-row: 1/10;
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 6rem);
 
+}
 .esquerda{
-
-    width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    padding-left: 2rem;
     grid-column: 1;
-    grid-row: 1/5;
+    grid-row: 1/9;
+}
+.direita{
+    grid-column: 2/3;
+    grid-row: 1/9;
+    
+}
+.cursos{
+    grid-column: 9;
+    grid-row: 1/8;
 }
 
 
+.amarelo{
+    width: 90%;
+}
+
+.img-cu {
+    width: 100%;
+    height: 100%;
+    padding-left: .5rem;
+    margin-top: 2rem;
+}
 
 .img-cu img{
-    border-radius: 100%;
+    border-radius: 50%;
+    transition: color 1s;
+}
+
+.img-cu img:hover{
+    opacity: .5;
+    transition: 1s;
+    color: black;
+}
+
+.azul{
+        
+    padding-left: 3rem;
+    text-align: justify;
 }
 
 .azul h1{
-    
-    
-    
-    padding-left: 4rem;
-    font-size: 2.5rem;
     font-family: var(--font-primary);
+    font-size: 2rem;
+    padding-left: 1rem;
     transition: color 1s;
-    font-weight: 500;
 }
 
 .azul h1:hover{
     opacity: 0.8;
     color: #fe8c00;
     transition: 1s;
-    
 }
 
 .azul p{
-    margin-bottom: .5rem;
-    padding-left: 2rem;
-    font-size: 1rem;
     font-family: var(--font-secundary);
+    font-size: 1rem;
     transition: color 1s;
     
 }
 
 .azul p:hover{
     opacity: 0.8;
-    color: #f83600;
+    color: rgb(30, 129, 129);
     transition: 1s;
-
-
 }
-.direita{    
 
-    
-    padding-bottom: 4rem;
-    padding-right: 5rem;
-    
-} 
-
-
-.direita h1 {
-
-    width: 110%;
-    padding-right: 20rem;
+.direita{
     padding-top: 2rem;
     padding-left: 8rem;
-    font-size: 4rem;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-primary);
-    margin-bottom: 1rem;
-    grid-column: 2;
-    grid-row: 1/5;
-    
+    width: 90%;
+    height: 100%;
 }
 
 .direita h3{
-
+    margin-top: 1rem;
+    padding-left: 1rem;
     font-family: var(--font-primary);
-    transition: color 1s;
-    font-weight: 500;
-    padding-left: 8rem;
     font-size: 2rem;
-    grid-column: 2;
-    grid-row: 1/5;
-    align-items: center;
-    justify-content: center;
-    width: 110%; 
-    padding-right: 20rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
+    transition: color 1s;
+    
+    
 }
 
 .direita h3:hover{
     opacity: 0.8;
     color: #fe8c00;
     transition: 1s;
-    
 }
-.direita p{
 
-    font-size: 1rem;
+.direita p {
     font-family: var(--font-secundary);
+    font-size: 1rem;
     transition: color 1s;
-    padding-left: 6rem;
+    
 }
 
 .direita p:hover{
     opacity: 0.8;
-    color: #f83600;
+    color: rgb(30, 129, 129);
     transition: 1s;
-
-
 }
 
-
-.cursos {
-
-     background-color: #eee;
-     border-radius: 10px;
-     margin-right: 4rem;
-     margin-bottom: 2%;
-
+.cursos{
+  
+    background-color: #eee;
+    border-radius: 10px;
+    color: black;
+    margin-left: 3rem;
+    width: 120%;
+    height: 100%;
 }
 
 .cursos h1{
-    
-    padding-left: 20%;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
     font-family: var(--font-primary);
+    font-size: 2rem;
     transition: color 1s;
-
 }
-
 .cursos h1:hover{
     opacity: 0.8;
     color: #fe8c00;
@@ -1264,55 +1298,54 @@ header{
 }
 
 .cursos p{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.5rem;
-    font-family: var(--font-secundary);
-    margin-bottom: 1rem;
+    width: 90%;
+    padding-left: 1rem;
+    transition: color 1s;
+    
+    
 }
-
 .cursos p:hover{
     opacity: 0.8;
-    color: #f83600;
+    color: rgb(30, 129, 129);
     transition: 1s;
-
-} 
+}
 
 @media(max-width:999px){
 
     .cu{
         background-color: black;
         color: #fff;
-       
-        
+        display: grid;
+        grid-template-columns: repeat(1, .5fr);
+        grid-template-rows: repeat(20, 9rem);
+        height: 100%;
     }
 
     .curriculo{
         background-color: #eee;
         color: black;
-        width: 60%;
-        margin-left: 5rem;
+        width: 110%;
+        margin-left: 3rem;
         border-radius: 10px 10px 10px 10px;
-        display: grid;
+        grid-column: 1;
+        grid-row: 1/15;
+        display:grid;
         grid-template-columns: repeat(1, .5fr);
-        grid-template-rows: repeat(14, 9rem);
+        grid-template-rows: repeat(15, 6rem);
     }
 
     .esquerda{
-
         grid-column: 1;
-        grid-row: 1/5;
-
+        grid-row: 1/9;
     }
-
+    
     .direita{
-        margin-top: 5rem;
         grid-column: 1;
-        grid-row: 7/11;
+        grid-row: 10/15;
     }
 
     .amarelo{
-        width: 100%;
+        width: 90%;
     }
 
     .img-cu {
@@ -1337,6 +1370,7 @@ header{
         font-size: 2rem;
         margin-top: 1rem;
         margin-bottom: .5rem;
+        padding-left: 0rem;
     }
 
     .azul p{
@@ -1347,23 +1381,48 @@ header{
 
     .direita{
         padding-left: 1rem;
+        width: 90%;
+        height: 100%;
     }
 
     .direita h3{
         
         font-family: var(--font-primary);
         font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     .direita p {
         font-family: var(--font-secundary);
         font-size: 1rem;
+        margin-top: 1rem;
     }
-    
 
-    
+    .cursos{
+        grid-column: 1;
+        grid-row: 16/20;
+        background-color: #eee;
+        border-radius: 10px;
+        color: black;
+        margin-left: 3rem;
+        width: 110%;
+    }
 
+    .cursos h1{
 
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        font-family: var(--font-primary);
+        font-size: 2rem;
+    }
 
-    
+    .cursos p{
+        width: 90%;
+        padding-left: 1rem;
+        
+        
+    }
+
 }
