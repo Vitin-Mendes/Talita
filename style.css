@@ -259,10 +259,18 @@ header{
     border-radius: 5px;
     cursor: pointer;
     animation: movebanner 1s;
-    
-    
 }
 
+.baixar{
+    text-decoration: none;
+    color: #fff;
+}
+
+.baiar{
+    text-decoration: none;
+    color: #fff;
+
+}
 .banner button:hover{
 
     opacity: 0.8;
@@ -1566,6 +1574,7 @@ header{
     height: 95vh;
     margin-left: 20rem;
     margin-top: 8rem;
+    margin-bottom: 3rem;
 }
 
 .fim img:hover{
@@ -1606,4 +1615,11 @@ header{
         right: 1rem;
 
     }
+}
+
+.footer-conteiner{
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
