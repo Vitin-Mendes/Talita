@@ -7,6 +7,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    
 
 }
 
@@ -25,6 +26,10 @@
     --font-primary:"Baloo Da 2", serif;
     --font-secundary: "Josefin+Slab", serif;
     --font-action:"Mulish:ital", serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .hamburguer{
@@ -55,6 +60,9 @@
 .show-menu .hamburguer{
 
     right: 16rem;
+    z-index: 155;
+    
+
 }
 
 
@@ -65,6 +73,8 @@
     box-shadow: 0.1rem 0.1rem 1px #000;
     transition: transform 1s;
     cursor: pointer;
+    z-index: 155;
+    
     
 }
 
@@ -73,6 +83,7 @@
 .show-menu #line1{
 
     transform: rotate(45deg) translate(.3rem, .45rem);
+    z-index: 155;
 }
 
 
@@ -86,7 +97,8 @@
 
 .show-menu #line3{
      
-    transform: rotate(-45deg) translate(.3rem, -.45rem);;
+    transform: rotate(-45deg) translate(.3rem, -.45rem);
+    z-index: 155;
 
 
 }
@@ -230,6 +242,8 @@ header{
 
 }
 
+
+
 .banner button{
 
     font-family: var(--font-action);
@@ -304,6 +318,7 @@ header{
     top:0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
     
 }
 
@@ -1532,4 +1547,63 @@ header{
         
     }
 
+}
+
+
+.final{
+    background-color: black;
+
+}
+
+.fim{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.fim img{
+    width: 75rem;
+    height: 95vh;
+    margin-left: 20rem;
+    margin-top: 8rem;
+}
+
+.fim img:hover{
+    opacity: .8;
+}
+
+@media(max-width:999px){
+    .fim img{
+        width: 20rem;
+        height: 50vh;
+        margin-left: 2rem;
+        margin-top: 4%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+#link-topo{
+    color: black;
+    background: #fe8c00;  
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00); 
+    background: linear-gradient(to left, #f83600, #fe8c00); 
+    position: fixed;
+    right: 2rem;
+    bottom: 3rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    box-shadow: 0 0.1rem 0.6rem #eee;
+}
+
+@media(max-width:999px){
+    #link-topo{
+        padding-left: 1rem;
+        right: 1rem;
+
+    }
 }
